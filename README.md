@@ -6,11 +6,11 @@ This project is a Selenium WebDriver automation framework developed using Java, 
 
 ## Tech Stack
 
-* Java
-* Selenium WebDriver
-* TestNG
-* Maven
-* Page Object Model (POM)
+- Java
+- Selenium WebDriver
+- TestNG
+- Maven
+- Page Object Model (POM)
 
 ## Project Structure
 
@@ -35,12 +35,12 @@ src/test/java
 
 ## Features Automated
 
-* User Registration
-* User Login
-* CSV File Upload
-* Agent Selection
-* Success Message Validation
-* End-to-End Team Setup Flow
+- User Registration
+- User Login
+- CSV File Upload
+- Agent Selection
+- Success Message Validation
+- End-to-End Team Setup Flow
 
 ## Framework Design
 
@@ -48,10 +48,15 @@ This framework follows the Page Object Model (POM) design pattern to improve mai
 
 ## Prerequisites
 
-* Java 8 or above
-* Maven
-* Chrome Browser
-* ChromeDriver (compatible with installed Chrome version)
+- Java 8 or above
+- Maven
+- Chrome Browser
+- ChromeDriver (compatible with installed Chrome version)
+
+## Project Demo Video
+
+[Registration Process] https://drive.google.com/file/d/16DccTf_FxqW_XeXOhfHsUYy1o7rOf5t1/view?usp=sharing
+[Login, Adding Agent, CSV File Upload] https://drive.google.com/file/d/1FZqcDwM9KzHMefAbXN5aT8peDSI5rG6G/view?usp=drive_link
 
 ## Execution
 
