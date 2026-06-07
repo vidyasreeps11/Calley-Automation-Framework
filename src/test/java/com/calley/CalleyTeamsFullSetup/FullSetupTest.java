@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import pompages.AgentPage;
 import pompages.CSVUploadPage;
-import pompages.Dashboard;
+import pompages.DashboardPage;
 import pompages.LoginPage;
 
 public class FullSetupTest extends BaseClass {
@@ -48,7 +48,7 @@ public class FullSetupTest extends BaseClass {
         System.out.println(
                 "Login Successful");
         
-        Dashboard  dashboard=new Dashboard(driver); 
+        DashboardPage  dashboard=new DashboardPage(driver); 
         
         dashboard.closeNotificationPopup();
 

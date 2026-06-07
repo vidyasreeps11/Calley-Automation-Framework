@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-public class Dashboard {
+public class DashboardPage {
 	
 	WebDriver driver ;
 	
@@ -13,7 +13,7 @@ public class Dashboard {
     By teamMenu = By.xpath("//span[text()='Team']");
     By agentsMenu = By.xpath("//span[text()='Agents']");
     
-    public Dashboard(WebDriver driver)
+    public DashboardPage(WebDriver driver)
     {
     	this.driver=driver;
     }
