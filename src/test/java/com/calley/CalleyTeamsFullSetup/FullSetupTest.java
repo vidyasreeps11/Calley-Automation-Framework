@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import pompages.AgentPage;
 import pompages.CSVUploadPage;
+import pompages.Dashboard;
 import pompages.LoginPage;
 
 public class FullSetupTest extends BaseClass {
@@ -47,19 +48,20 @@ public class FullSetupTest extends BaseClass {
         System.out.println(
                 "Login Successful");
         
+        Dashboard  dashboard=new Dashboard(driver); 
+        
+        dashboard.closeNotificationPopup();
+
+        Thread.sleep(2000);
+        
+        dashboard.navigateToAgents();
+
+        Thread.sleep(3000);
+        
        //AUTOMATING ADDING AGENTS
         
         AgentPage agentPage =
                 new AgentPage(driver);
-        
-       // agentPage.closeNotificationPopup();
-
-        //Thread.sleep(2000);
-        
-
-        agentPage.navigateToAgents();
-
-        Thread.sleep(3000);
         
         Assert.assertTrue(
         	    driver.getCurrentUrl()

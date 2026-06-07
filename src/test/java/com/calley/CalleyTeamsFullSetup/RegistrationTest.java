@@ -29,7 +29,7 @@ public class RegistrationTest extends BaseClass {
             "Please complete the CAPTCHA manually to proceed with registration");
 
         try {
-            Thread.sleep(15000);
+            Thread.sleep(20000);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -8,11 +8,6 @@ import org.openqa.selenium.interactions.Actions;
 public class AgentPage {
 
     WebDriver driver;
-    
-    By laterButton = By.id("onesignal-slidedown-cancel-button");
-
-    By teamMenu = By.xpath("//span[text()='Team']");
-    By agentsMenu = By.xpath("//span[text()='Agents']");
 
     By agentName = By.xpath("//input[@placeholder='Enter name']");
     By agentMobile = By.xpath("//input[@placeholder='Enter mobile no.']");
@@ -27,41 +22,15 @@ public class AgentPage {
     By okButton =
             By.xpath("//button[text()='OK']");
 
+    
     public AgentPage(WebDriver driver) {
 
         this.driver = driver;
     }
 
-    public void closeNotificationPopup() {
-
-        try {
-
-            driver.findElement(laterButton).click();
-
-        } catch (Exception e) {
-
-            System.out.println(
-                "Notification popup not displayed");
-        }
-    }
+   
+// methods to fill the new agent details
     
-    public void navigateToAgents() throws InterruptedException {
-
-    	WebElement team =
-                driver.findElement(teamMenu);
-
-        Actions actions =
-                new Actions(driver);
-
-        actions.moveToElement(team)
-               .perform();
-
-        Thread.sleep(1000);
-
-        driver.findElement(agentsMenu)
-              .click();
-    }
-
     public void enterAgentName(String name) {
 
         driver.findElement(agentName).sendKeys(name);
